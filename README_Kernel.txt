@@ -1,5 +1,9 @@
 ################################################################################
-1. How to Build
+1. Download and unzip the kernel source of S918BXXU3BWJM.
+
+2. Unzip and update the kernel source of S918BXXS3BXBD.
+
+3. How to Build
         - get Toolchain
                 get the proper toolchain packages from AOSP or CodeSourcery or ETC.
                 (Download link : https://opensource.samsung.com/uploadSearch?searchValue=toolchain )
@@ -36,11 +40,11 @@
                         RECOMPILE_KERNEL=1 ./kernel_platform/build/android/prepare_vendor.sh sec ${TARGET_PRODUCT}
 
 
-2. Output files
+4. Output files
         - Kernel : arch/${__arch_name}/boot/Image
         - module : drivers/*/*.ko
 
-3. How to Clean
+5. How to Clean
         Change to OUTPUT_DIR folder
         EX) /home/dpi/qb5_8814/workspace/P4_1716/android/out/target/product/dm3q/out
         $ make clean
